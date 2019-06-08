@@ -9,7 +9,7 @@
   "author": "Thomas Lindstrøm <t@hom.as>",
   "license": "ISC",
   "dependencies": {
-    "cssnano": "^3.10.0",
+    "cssnano": "^4.0.0",
     "next": "latest",
     "postcss-cssnext": "^2.9.0",
     "postcss-loader": "^1.3.0",
