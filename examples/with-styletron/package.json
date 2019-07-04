@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
@@ -12,6 +14,8 @@
     "react-dom": "^15.4.2",
     "styletron-client": "^2.2.0",
     "styletron-react": "^2.2.1",
-    "styletron-server": "^2.2.0"
-  }
+    "styletron-server": "^2.2.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
