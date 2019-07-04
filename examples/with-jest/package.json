@@ -4,7 +4,8 @@
   "dependencies": {
     "next": "latest",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
@@ -16,6 +17,9 @@
     "test": "jest",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
-  }
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
