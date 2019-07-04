@@ -4,12 +4,16 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "next": "latest"
+    "next": "latest",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^0.2.0"
-  }
+  },
+  "snyk": true
 }
