@@ -2,13 +2,17 @@
   "name": "with-refnux",
   "version": "1.0.0",
   "scripts": {
-    "next": "next"
+    "next": "next",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "ISC",
   "dependencies": {
     "next": "latest",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "refnux": "^1.3.0"
-  }
+    "refnux": "^1.3.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
