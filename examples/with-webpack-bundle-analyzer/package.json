@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "analyze": "cross-env ANALYZE=1 next build"
+    "analyze": "cross-env ANALYZE=1 next build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
@@ -13,7 +15,9 @@
     "faker": "^4.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "webpack-bundle-analyzer": "^2.8.2"
+    "webpack-bundle-analyzer": "^2.8.2",
+    "snyk": "^1.189.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
