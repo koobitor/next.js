@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
@@ -14,7 +16,9 @@
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.1",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "snyk": "^1.189.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
