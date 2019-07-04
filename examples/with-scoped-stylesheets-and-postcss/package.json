@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Thomas Lindstrøm <t@hom.as>",
   "license": "ISC",
@@ -17,9 +19,11 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "skeleton-loader": "^1.1.2",
-    "trash": "^4.0.1"
+    "trash": "^4.0.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "now": "^4.10.3"
-  }
+  },
+  "snyk": true
 }
