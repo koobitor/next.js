@@ -2,7 +2,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.7",
@@ -10,6 +12,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "rebass": "1.0.0-1",
-    "styled-components": "^2.1.1"
-  }
+    "styled-components": "^2.1.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
