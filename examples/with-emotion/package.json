@@ -4,13 +4,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "emotion": "^5.1.4",
     "next": "^2.4.6",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "snyk": "^1.189.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
