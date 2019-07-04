@@ -4,13 +4,17 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "module-alias": "^2.0.0",
     "next": "latest",
     "preact": "^7.2.0",
-    "preact-compat": "^3.14.0"
+    "preact-compat": "^3.14.0",
+    "snyk": "^1.189.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
