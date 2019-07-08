@@ -7,17 +7,21 @@
   "scripts": {
     "start": "next",
     "build": "next build",
-    "run": "next start"
+    "run": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "dependencies":{
+  "dependencies": {
     "next": "latest",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "babel-plugin-css-modules-transform": "^1.2.1",
     "node-sass": "^4.5.0",
     "postcss": "^5.2.16",
     "postcss-cssnext": "^2.10.0"
-  }
+  },
+  "snyk": true
 }
