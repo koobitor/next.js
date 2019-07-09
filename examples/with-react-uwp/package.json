@@ -6,11 +6,15 @@
     "next": "latest",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-uwp": "^1.0.9"
+    "react-uwp": "^1.0.9",
+    "snyk": "^1.192.4"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
-  }
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
