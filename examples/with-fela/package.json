@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "fela": "^5.0.1",
@@ -13,6 +15,8 @@
     "next": "latest",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-fela": "^5.0.2"
-  }
+    "react-fela": "^5.0.2",
+    "snyk": "^1.192.4"
+  },
+  "snyk": true
 }
