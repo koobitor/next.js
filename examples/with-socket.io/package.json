@@ -8,11 +8,15 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "socket.io": "^1.7.3",
-    "socket.io-client": "^1.7.3"
+    "socket.io-client": "^1.7.3",
+    "snyk": "^1.192.4"
   },
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
-  }
+    "start": "NODE_ENV=production node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
